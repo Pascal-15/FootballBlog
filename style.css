@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: 'Exo 2';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    color: #fff;
+    background-color: #202020;
+    padding: 50px;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    background-color: rgb(102, 74, 74);
+}
+
+.logo{
+    width: 80px;
+    border-radius: 20%;
+}
+
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav li{
+    list-style: none;
+    padding: 0 20px;
+}
+
+#nav li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+#nav li a:hover{
+    cursor: pointer;
+}
+
+.container{
+    max-width: 800px;
+}
+
+.container-daily header{
+    background-image: url('assets/img/daily.jpg');
+    border-radius: 16px;
+    min-height: 400px;
+    padding: 20px 50px 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+    --justify-content: center;
+}
+
+.container-daily header .category{
+    background-color: rgb(52, 32, 122);
+    width: fit-content;
+    padding: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.container-daily header .title{
+    background-color: rgba(0, 0, 0, 0.92);
+    width: fit-content;
+    padding: 8px;
+    font-size: 3rem;
+    font-weight: bold;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.container-daily header .textSnippet{
+    background-color: rgba(43, 41, 41, 0.9);
+    width: fit-content;
+    padding: 8px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+
+
+
+
+
+
+
+
+/* Dark/Light mode switch */
+
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+}
+
+.switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.switch span{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 34px;
+    transition: .4s;
+}
+
+.switch span::before{
+    position: absolute;
+    content: '';
+    height: 22px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%;
+    transition: .4s;
+}
+
+.switch input:checked + span{
+    background-color: aqua;
+}
+
+.switch input:checked +span::before{
+    transform: translateX(22px);
+}
