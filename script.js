@@ -23,15 +23,6 @@ const articels = [
     }
 ]
 
-function darkMode() {
-    if (mode.checked == true) {
-        html.style.filter = "invert(95%) hue-rotate(180deg)"
-    }
-    else {
-        html.style.filter = "invert(0%)"
-    }
-}
-
 function loadArticle() {
     
 }
