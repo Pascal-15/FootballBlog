@@ -1,7 +1,3 @@
-const mode = document.getElementById('switch-mode');
-const html = document.getElementById('html');
-const containerDaily = document.getElementsByClassName('container-daily');
-
 
 
 //Top daily article
@@ -26,7 +22,3 @@ const articels = [
 function loadArticle() {
     
 }
-
-
-html.addEventListener('click', darkMode)
-containerDaily.addEventListener('click', loadArticle)
