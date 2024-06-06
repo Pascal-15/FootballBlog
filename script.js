@@ -1,4 +1,4 @@
-
+const menuCheckbox = document.getElementById('checkbox-toggle')
 
 //Top daily article
 const daily = {
@@ -22,3 +22,16 @@ const articels = [
 function loadArticle() {
     
 }
+
+function showMenu() {
+    if (this.checked) {
+        document.querySelector('.navlist ul').style.display = 'flex';
+        document.querySelector('.navlist ul').style.flexDirection = 'column';;
+    }
+    else {
+        document.querySelector('.navlist ul').style.display = 'none';
+    }
+}
+
+
+menuCheckbox.addEventListener('change', showMenu)
